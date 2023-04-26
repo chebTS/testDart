@@ -1,2 +1,3 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+A sample Dart command-line application 
+'lib/cli2.dart' - getData() - makes HTTP request.
+'bin/cli2.dart' - calls getData(), create database and save some sample data in it.

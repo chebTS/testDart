@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:sqlite3/sqlite3.dart';
 
 void main(List<String> arguments) async {
+  cli2.getData();
 
   print('Using sqlite3 ${sqlite3.version}');
   final db = sqlite3.openInMemory();
@@ -47,7 +48,6 @@ void main(List<String> arguments) async {
   db.dispose();
 }
 
-//cli2.getData();
 // void main(List<String> arguments) {
 //   print('Hello world: ${cli2.calculate()}!');
 // }

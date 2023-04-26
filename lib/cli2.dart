@@ -3,10 +3,6 @@ import 'package:http/http.dart' as http;
 
 import 'dart:convert' as convert;
 
-int calculate() {
-  return 6 * 7;
-}
-
 void getData() async{
   final url = Uri.https('api.genderize.io', '/', {'name': 'lena'});
 
