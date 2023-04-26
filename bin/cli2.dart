@@ -1,11 +1,15 @@
-import 'package:cli2/cli2.dart' as cli2;
+//import 'package:cli2/cli2.dart' as cli2;
+import 'package:cli2/service.dart' as service;
 
 import 'dart:io';
 import 'package:sqlite3/sqlite3.dart';
 
 void main(List<String> arguments) async {
-  cli2.getData();
+  //cli2.getData();
+  service.getData();
+}
 
+void saveData(){
   print('Using sqlite3 ${sqlite3.version}');
   final db = sqlite3.openInMemory();
   db.execute('''
