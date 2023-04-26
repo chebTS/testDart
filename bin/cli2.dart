@@ -6,12 +6,14 @@ import 'package:sqlite3/sqlite3.dart';
 
 void main(List<String> arguments) async {
   //cli2.getData();
-  service.getData();
+  //service.getData();
+  saveData();
 }
 
 void saveData(){
   print('Using sqlite3 ${sqlite3.version}');
-  final db = sqlite3.openInMemory();
+  //final db = sqlite3.openInMemory();
+  final db = sqlite3.open("databese.db");
   db.execute('''
     CREATE TABLE artists (
       id INTEGER NOT NULL PRIMARY KEY,
